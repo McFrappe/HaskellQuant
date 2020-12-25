@@ -8,8 +8,9 @@ Uncomment and set `-- allow-newer: False` to `allow-newer: True` in `~/.cabal/co
 
 If you are running Arch you must enable dynamic libraries:
 ```zsh
-$ cabal v2-configure --disable-library-vanilla --enable-shared --enable-executable-dynamic --ghc-options=-dynamicconfigure
+$ cabal v2-configure --disable-library-vanilla --enable-shared --enable-executable-dynamic --ghc-options=-dynamic
 ```
+
 ## How to run
 After setup, simply run:
 ```zsh

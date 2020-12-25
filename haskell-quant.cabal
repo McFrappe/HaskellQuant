@@ -15,7 +15,7 @@ maintainer:          fredrik@engstrand.nu
 -- copyright:
 -- category:
 build-type:          Simple
-extra-source-files:  CHANGELOG.md, README.md
+extra-source-files:  README.md
 
 executable haskell-quant
   main-is:             Main.hs
