@@ -1,7 +1,7 @@
 # Haskell quant
 Haskell Quant is a proof-of-concept application to simulate the use of trading algorithms in the stock market. The algorithms can be applied to either historic- or real-time stock data, depending on what the user want to achieve. It does not provide the user with the ability to trade with real money, nor do we encourage anyone to use the application in such a way. It is a trading platform for developing, testing and mainting trading algorithms. Implemented with a TUI using brick and live stock data collected with IEXCloud.
 
-<img src="docs/haskell-quant/ui/trader.png">
+<img src="screenshots/trader.png">
 
 ## Setup
 Uncomment and set `-- allow-newer: False` to `allow-newer: True` in `~/.cabal/config`
@@ -10,6 +10,8 @@ If you are running Arch you must enable dynamic libraries:
 ```zsh
 $ cabal v2-configure --disable-library-vanilla --enable-shared --enable-executable-dynamic --ghc-options=-dynamic
 ```
+
+If you want to use realtime data from IEXCloud, you must enter your publishable API-key into `iexApiKey` in `src/Service/Market.hs`.
 
 ## How to run
 After setup, simply run:
